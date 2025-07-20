@@ -1,0 +1,14 @@
+name: first workflow
+
+on:
+  push:
+   branches:
+    - main
+    - "releses/**"
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: first step
+      run: echo "hellow world"
